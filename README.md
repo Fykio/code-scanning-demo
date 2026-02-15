@@ -77,7 +77,7 @@ DATABASE_PASSWORD = "admin123"
 # 🟡 Remove this hardcoded password
 ```
 
-## CI/CD Integration with SonarCloud
+## CI Integration with SonarCloud
 
 ### Prerequisites
 
@@ -98,12 +98,16 @@ DATABASE_PASSWORD = "admin123"
    - Click `Set Up`
 
 3. **Get Your Token**
+   - Click on your profile picture in the top right corner
+   - Select "My Account" fron the dropdown menu
+   - Click on security from the left side menu
+   - You'll see a "Generate Tokens" section
    - SonarCloud will generate a `SONAR_TOKEN`
    - Copy this token (you'll need it for GitHub)
 
 4. **Add Token to GitHub Secrets**
    - Go to your GitHub repository
-   - Click Settings → Secrets and variables → Actions
+   - Click `Settings → Secrets and variables → Actions`
    - Click "New repository secret"
    - Name: `SONAR_TOKEN`
    - Value: [paste the token from SonarCloud]
